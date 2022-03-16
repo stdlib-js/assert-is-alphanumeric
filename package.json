@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-alphanumeric",
-  "version": "0.0.8",
+  "version": "0.0.0",
   "description": "Test whether a string contains only alphanumeric characters.",
   "license": "Apache-2.0",
   "author": {
