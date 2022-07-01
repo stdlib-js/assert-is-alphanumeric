@@ -53,7 +53,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.isAlphaNumeric;
+})();
 })();
 </script>
 ```
@@ -95,6 +97,7 @@ var bool = isAlphaNumeric( 'abc0123456789' );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var out = isAlphaNumeric( 'abs0123456789' );
 // returns true
@@ -108,6 +111,7 @@ out = isAlphaNumeric( '' );
 out = isAlphaNumeric( 123 );
 // returns false
 
+})();
 })();
 </script>
 </body>
@@ -207,7 +211,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-digit-string]: https://github.com/stdlib-js/assert-is-digit-string/tree/umd
+[@stdlib/assert/is-digit-string]: https://github.com/stdlib-js/assert-is-digit-string/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
