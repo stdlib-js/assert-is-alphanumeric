@@ -24,40 +24,30 @@ limitations under the License.
 
 > Test whether a string contains only alphanumeric characters.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-alphanumeric
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isAlphaNumeric = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isAlphaNumeric = require( 'path/to/vendor/umd/assert-is-alphanumeric/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-(function () {
-    window.isAlphaNumeric;
-})();
-})();
-</script>
+var isAlphaNumeric = require( '@stdlib/assert-is-alphanumeric' );
 ```
 
 #### isAlphaNumeric( value )
@@ -90,14 +80,8 @@ var bool = isAlphaNumeric( 'abc0123456789' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
-(function () {
+```javascript
+var isAlphaNumeric = require( '@stdlib/assert-is-alphanumeric' );
 
 var out = isAlphaNumeric( 'abs0123456789' );
 // returns true
@@ -110,19 +94,72 @@ out = isAlphaNumeric( '' );
 
 out = isAlphaNumeric( 123 );
 // returns false
-
-})();
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/assert-is-alphanumeric
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: is-alphanumeric [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ is-alphanumeric 01abc23456789
+true
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n '0123456789' | is-alphanumeric
+true
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -211,7 +248,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-digit-string]: https://github.com/stdlib-js/assert-is-digit-string/tree/umd/tree/umd
+[@stdlib/assert/is-digit-string]: https://github.com/stdlib-js/assert-is-digit-string
 
 <!-- </related-links> -->
 
