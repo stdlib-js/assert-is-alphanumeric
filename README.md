@@ -24,88 +24,19 @@ limitations under the License.
 
 > Test whether a string contains only alphanumeric characters.
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/assert-is-alphanumeric
-```
 
-Alternatively,
 
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
-</section>
 
-<section class="usage">
 
-## Usage
 
-```javascript
-var isAlphaNumeric = require( '@stdlib/assert-is-alphanumeric' );
-```
-
-#### isAlphaNumeric( value )
-
-Tests whether a string contains only alphanumeric characters.
-
-```javascript
-var bool = isAlphaNumeric( 'abc0123456789' );
-// returns true
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="notes">
-
-## Notes
-
--   For non-string values, the function returns `false`.
--   _Alphanumeric_ is defined as the characters `a-zA-Z` and the numeric characters `0-9`.
-
-</section>
-
-<!-- /.notes -->
-
-<section class="examples">
-
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var isAlphaNumeric = require( '@stdlib/assert-is-alphanumeric' );
-
-var out = isAlphaNumeric( 'abs0123456789' );
-// returns true
-
-out = isAlphaNumeric( '0xffffff' );
-// returns true
-
-out = isAlphaNumeric( '' );
-// returns false
-
-out = isAlphaNumeric( 123 );
-// returns false
-```
-
-</section>
-
-<!-- /.examples -->
-
-* * *
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -123,7 +54,7 @@ npm install -g @stdlib/assert-is-alphanumeric-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: is-alphanumeric [options] [<string>]
@@ -143,7 +74,7 @@ Options:
 
 <section class="notes">
 
-### Notes
+## Notes
 
 -   If the split separator is a [regular expression][mdn-regexp], ensure that the `split` option is either properly escaped or enclosed in quotes.
 
@@ -162,7 +93,7 @@ Options:
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ is-alphanumeric 01abc23456789
@@ -196,10 +127,9 @@ true
 
 <section class="related">
 
-* * *
-
 ## See Also
 
+-   <span class="package-name">[`@stdlib/assert-is-alphanumeric`][@stdlib/assert-is-alphanumeric]</span><span class="delimiter">: </span><span class="description">test whether a string contains only alphanumeric characters.</span>
 -   <span class="package-name">[`@stdlib/assert-is-digit-string`][@stdlib/assert/is-digit-string]</span><span class="delimiter">: </span><span class="description">test whether a string contains only numeric digits.</span>
 
 </section>
@@ -219,7 +149,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -242,8 +172,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-alphanumeric.svg
-[npm-url]: https://npmjs.org/package/@stdlib/assert-is-alphanumeric
+[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-is-alphanumeric-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/assert-is-alphanumeric-cli
 
 [test-image]: https://github.com/stdlib-js/assert-is-alphanumeric/actions/workflows/test.yml/badge.svg?branch=main
 [test-url]: https://github.com/stdlib-js/assert-is-alphanumeric/actions/workflows/test.yml?query=branch:main
