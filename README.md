@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-alphanumeric/tags). For example,
+
+```javascript
 import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@v0.2.0-esm/index.mjs';
 ```
 
@@ -81,7 +86,7 @@ var bool = isAlphaNumeric( 'abc0123456789' );
 <body>
 <script type="module">
 
-import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@v0.2.0-esm/index.mjs';
+import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@esm/index.mjs';
 
 var out = isAlphaNumeric( 'abs0123456789' );
 // returns true
