@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@esm/index.mjs';
+import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@v0.2.1-esm/index.mjs';
 ```
 
 #### isAlphaNumeric( value )
@@ -81,7 +81,7 @@ var bool = isAlphaNumeric( 'abc0123456789' );
 <body>
 <script type="module">
 
-import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@esm/index.mjs';
+import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@v0.2.1-esm/index.mjs';
 
 var out = isAlphaNumeric( 'abs0123456789' );
 // returns true
