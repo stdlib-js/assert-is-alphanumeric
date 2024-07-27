@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@deno/mod.js';
+import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@v0.2.2-deno/mod.js';
 ```
 
 #### isAlphaNumeric( value )
@@ -76,7 +76,7 @@ var bool = isAlphaNumeric( 'abc0123456789' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@deno/mod.js';
+import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@v0.2.2-deno/mod.js';
 
 var out = isAlphaNumeric( 'abs0123456789' );
 // returns true
