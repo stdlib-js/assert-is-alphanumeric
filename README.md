@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-alphanumeric/tags). For example,
+
+```javascript
 import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@v0.2.3-deno/mod.js';
 ```
 
@@ -76,7 +81,7 @@ var bool = isAlphaNumeric( 'abc0123456789' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@v0.2.3-deno/mod.js';
+import isAlphaNumeric from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-alphanumeric@deno/mod.js';
 
 var out = isAlphaNumeric( 'abs0123456789' );
 // returns true
